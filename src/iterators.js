@@ -37,11 +37,34 @@ var Iterators = (function() {
       return newArray;
     },
 
+    filter: function(numList, action) {
+      var newArray = [];
+
+      for (var i = 0; i < numList.length; i++) {
+        if (function(numList[i])) {
+          var result = action(numList[i]);
+          newArray = result; 
+        };
+        newArray.push(result);
+      };
+      return newArray;
+    },
+
+    reduce: function(numList, action) {
+      var prevNum = undefined
+      for (var i = 0; i < numList.length; i++) {
+          prevNum = action(prevNum, numList[i])
+      };
+      return prevNum
+    }
 
 
 
+
+//closing brace for API
   };
   return api;
+  // closing brace for function
 })();
 
 module.exports = Iterators;

@@ -47,4 +47,32 @@ describe('Iterators', function(){
       // expect(true).to.equal(false);
     });
   })
+
+  describe("#filter", function() {
+    var array1 = [3,9,12];
+    var newArray = [];
+
+    it('should filter an array and return the filtered array', function() {
+      var result = Iterators.filter(array1, function(taco) {
+        return taco < 10;
+        newArray.push(result);
+      });
+      expect(newArray).to.deep.equal([3, 9])
+    });
+  });
+
+  describe("#reduce", function() {
+    var array1 = [1,2,3,4];
+    var newNum = [];
+
+    it('should return a single value that reflects operated array', function() {
+        result = Iterators.reduce(array1, function (){
+          newNum += array[1]
+        })
+    });
+  });
+
+
+
+
 });

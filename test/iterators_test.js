@@ -22,4 +22,9 @@ describe('Iterators', function(){
       expect(Iterators.min([7,3,21])).to.equal(3);
     });
   })
+  describe("#each", function() {
+    it('should go through every item in array', function(){
+      expect(Iterators.each([7,3,21])).to.equal([7,3,21]);
+    });
+  })
 })

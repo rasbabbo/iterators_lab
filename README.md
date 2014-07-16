@@ -17,12 +17,18 @@ Research the following term and summarize your findings on it two to three sente
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
-* `max`
-* `min`  Returns the minimum value in list. If an iterator function is provided, it will be used on each value to generate the criterion by which the value is ranked.
-* `each`
-* `map`
-* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+* `max` - returns the highest in an array; 
+* 
+* `min`  Returns the minimum value in array. If an iterator function is provided, it will be used on each value to generate the criterion by which the value is ranked.
+* `each`- each iterator goes through each item in the array; example would be returning the values of the array using console.log
+* `map`-  clones the values to a new array/ maintains the original array; non-destructive; creates a new array based on the function each item in an array and returns the results in a new array.  example: takes original array, performs function and returns new array without altering the first one.  [1,2,3] +1 would stay the same but [2,3,4] would be the created array
+* `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) - compund valuse in an array into a single value ie- [dog, gone] becomes [doggone]
+
+* `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) - 
+will reduce all numbers to a single number
+     array.reduce(function(agg, currentItem) {
+          return agg * currItem;
+}
 * `reject`: [note](http://underscorejs.org/#reject)
 
 Use the notes provided to help guide you explanation.

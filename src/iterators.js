@@ -19,8 +19,16 @@ var Iterators = (function() {
       };
       return min;
     }
-  };
+    each: function(list, action) {
+    for (var i = 0; i < numList.length; i++) {
+      action(list[i], i)
+    };
+  return list;
+}
 
+
+
+  };
   return api;
 })();
 

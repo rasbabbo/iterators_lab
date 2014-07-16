@@ -1,4 +1,4 @@
-
+  
 var Iterators = (function() {
   var api = {
     max: function(numList){
@@ -68,6 +68,28 @@ var Iterators = (function() {
 })();
 
 module.exports = Iterators;
+
+
+var myNumbers = [ -1, 2, -3, 4, -5, 6];
+
+var square = function(num) {
+    num * num;
+    return Math.sqrt(num);
+};
+
+//or
+
+var square = function(num) {
+  return Math.abs(num);
+}
+
+// var sqrRoot = function(num) {
+//     return Math.sqrt(num);
+// };
+
+
+var sqrNumbers = map(myNumbers, square);
+// var absNumbers = map(sqrNumbers, sqrRoot);
 
 
 

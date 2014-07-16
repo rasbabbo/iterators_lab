@@ -9,6 +9,15 @@ var Iterators = (function() {
         }
       };
       return max;
+    },
+    min: function(numList) {
+      var min = Infinity;
+      for (var i = 0; i < numList.length; i++) {
+        if (numList[i] < min) {
+          min = numList[i];
+        }
+      };
+      return min;
     }
   };
 
@@ -16,3 +25,7 @@ var Iterators = (function() {
 })();
 
 module.exports = Iterators;
+
+
+
+

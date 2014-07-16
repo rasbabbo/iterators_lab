@@ -11,14 +11,14 @@ In the iterators lab we will be continuing our exploration of iterators and buil
 
 Research the following term and summarize your findings on it two to three sentences:
 
-* `higher-order function`
+* `higher-order function` -- the highest level of functions; in a cascading order--
 
 
 Pretending we implemented the following methods, update this README with a description of each of the following and an example you've created:
 
 
 * `max`
-* `min`
+* `min`  Returns the minimum value in list. If an iterator function is provided, it will be used on each value to generate the criterion by which the value is ranked.
 * `each`
 * `map`
 * `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)

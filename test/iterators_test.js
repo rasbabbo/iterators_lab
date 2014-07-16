@@ -15,4 +15,11 @@ describe('Iterators', function(){
       expect(Iterators.max(myArr)).to.equal(-Infinity);
     })
   })
+
+  describe("#min", function () {
+    it('should find the minimum value in array', function(){
+      //expect(true).to.equal(false);
+      expect(Iterators.min([7,3,21])).to.equal(3);
+    });
+  })
 })
